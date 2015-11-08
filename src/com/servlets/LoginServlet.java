@@ -51,6 +51,8 @@ public class LoginServlet extends HttpServlet {
 		//response.getWriter().write("/TaskBee");
 
 		// If authentication is successful reroute to home page
+		
+		//@TODO
 
 		// Else re reroute to login page
 	}
