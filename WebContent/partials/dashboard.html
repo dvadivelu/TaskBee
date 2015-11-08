@@ -1,0 +1,76 @@
+
+<div class="container" ng-app="task">
+	<br /> <br />   
+
+  <br />  
+	<div>
+
+		<div class="panel panel-warning">
+			<div class="panel-heading"><strong>Dashboard</strong></div>
+			<div class="panel-body">
+
+				<table class="table table-striped">
+					<tr>
+						<td>Total tasks assigned</td>
+						<td><span class="label label-info">{{tasks.length}}</span></td>
+					</tr>
+
+
+					<tr>
+						<td>Total tasks completed</td>
+						<td><span class="label label-success">{{getCompletedItems()}}</span></td>
+					</tr>
+
+					<tr>
+						<td>Total tasks pending</td>
+						<td><span class="label label-primary">{{getPendingItems()}}</span></td>
+					</tr>
+
+					<tr>
+						<td>Total tasks overdue</td>
+						<td><span class="label label-danger">{{getItemsDueToday()}}</span></td>
+					</tr>
+
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div>
+
+		<div class="panel panel-warning">
+			<div class="panel-heading"><strong>Due</strong></div>
+			<div class="panel-body">
+				<table class="table table-striped">
+					<thead>
+
+						<tr>
+
+							<th>Task</th>
+							<th>Assignee</th>
+
+							<th>Priority</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="task in tasks | filter:{'due':curDate}">
+
+							<td>{{ task.description | limitTo: 100 }}
+								{{task.description.length>100?"..." : ""}}</td>
+							<td>{{ task.name}}</td>
+
+							<td>{{ task.priority}}</td>
+
+
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+</div>

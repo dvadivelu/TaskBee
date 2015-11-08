@@ -1,0 +1,49 @@
+<div class="container" ng-app="task">
+
+	<br />
+	<br />
+	<div class="panel panel-warning">
+		<div class="panel-heading">My Tasks</div>
+		<div class="panel-body">
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<input type="text" ng-model="taskfilter" class="form-control"
+							placeholder="Search" />
+					</tr>
+					<tr>
+						<th></th>
+						<th>Task</th>
+						<th>Assignee</th>
+						<th>Due</th>
+						<th>Priority</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="task in tasks |filter:taskfilter | orderBy:'due'">
+
+						<td><a href="#"> <span class="glyphicon glyphicon-pencil"></span></a>
+						</td>
+						<td>{{ task.description | limitTo: 100 }}
+							{{task.description.length>100?"..." : ""}}</td>
+						<td>{{ task.name}}</td>
+						<td>{{ task.due}}</td>
+						<td>{{ task.priority}}</td>
+
+
+					</tr>
+				</tbody>
+			</table>
+
+
+		</div>
+	</div>
+
+
+
+
+</div>
+
+

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Task Bee - Manage it better!</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description"
+	content="How to. Bootstrap 3 login form with full width background image makes a nice landing, launch or sign in page" />
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="/bootstrap/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+
+<link href="css/login.css" type="text/css" rel="stylesheet">
+
+
+<!-- CSS code from Bootply.com editor -->
+
+<style type="text/css">
+/* CSS used here will be applied after bootstrap.css */
+.panel-default {
+	opacity: 0.9;
+	margin-top: 140px;
+}
+
+.form-group.last {
+	margin-bottom: 0px;
+}
+</style>
+</head>
+
+<!-- HTML code from Bootply.com editor -->
+
+<body>
+
+	<div ng-app="task">
+
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+
+					<img src="images/logo.png" height="50px;" alt="" />
+					<h4 style="color: #D8D8D8">Task Bee</h4>
+
+				</div>
+
+				<div class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right navbar-center">
+						<li><a href="#/home">Home <span
+								class="glyphicon glyphicon-home"></span>
+						</a></li>
+
+						<li><a href="#/task">Add Tasks <span
+								class="glyphicon glyphicon-plus-sign"></span>
+						</a></li>
+
+						<li><a href="#/task" >Search <span
+								class="glyphicon glyphicon-search"></span>
+						</a></li>
+						<li><a href="#/myaccount">My Account <span
+								class="glyphicon glyphicon-user"></span>
+						</a></li>
+
+
+						<li><a href="/TaskBee">Logout <span
+								class="glyphicon glyphicon-log-out"></span>
+
+						</a></li>
+
+					</ul>
+
+
+				</div>
+
+
+			</div>
+			<!-- /.container -->
+		</nav>
+
+		<div ng-view></div>
+
+	</div>
+
+
+	<script type='text/javascript'
+		src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script type='text/javascript' src="js/angular.min.js"></script>
+	<script type='text/javascript' src="js/angular-route.min.js"></script>
+	<script type='text/javascript' src="js/taskCtrl.js"></script>
+	<script type='text/javascript'
+		src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<!-- JavaScript jQuery code from Bootply.com editor  -->
+
+	<script type='text/javascript'>
+		$(document).ready(function() {
+
+		});
+	</script>
+</body>
+</html>
